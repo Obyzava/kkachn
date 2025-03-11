@@ -12,7 +12,6 @@
             color: white;
             text-align: center;
             padding: 50px;
-            animation: fadeIn 1.5s ease-in-out;
             position: relative;
             overflow: hidden;
         }
@@ -20,7 +19,6 @@
             font-size: 2em;
             color: #ff66b2;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            animation: pop 1s ease-in-out;
             position: relative;
             z-index: 2;
         }
@@ -45,7 +43,6 @@
             transition: 0.3s;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             font-weight: bold;
-            animation: slideIn 1s ease-in-out;
             position: relative;
         }
         .links a:hover {
@@ -55,48 +52,26 @@
         }
         .character-img-right {
             position: fixed;
-            top: 50%;
-            left: 90%;
-            transform: translate(-50%, -50%);
-            width: 40%;
+            bottom: 0;
+            right: 0;
+            width: 30%;
             height: auto;
             opacity: 0.3;
             z-index: 1;
         }
         .character-img-left {
             position: fixed;
-            top: 50%;
-            left: 10%;
-            transform: translate(-50%, -50%);
-            width: 40%;
+            bottom: 0;
+            left: 0;
+            width: 30%;
             height: auto;
             opacity: 0.3;
             z-index: 1;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes pop {
-            0% { transform: scale(0.8); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-        @keyframes slideIn {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        @keyframes floating {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0); }
-        }
-        .floating-effect {
-            animation: floating 3s infinite ease-in-out;
-        }
     </style>
 </head>
 <body>
-    <h1 class="floating-effect">❤️Kachn❤️</h1>
+    <h1>❤️Kachn❤️</h1>
     <div class="links">
         <a href="https://www.tiktok.com/@kachn.art?_t=8lMXeBn61X3&_r=1" target="_blank"><i class="fab fa-tiktok"></i> ArtTIKTOK</a>
         <a href="https://www.tiktok.com/@vtuberkachn?_t=8rWOQUS2hwF&_r=1" target="_blank"><i class="fab fa-tiktok"></i> VtubeTiktok</a>
@@ -106,8 +81,7 @@
         <a href="https://t.me/kachnart/363" target="_blank"><i class="fas fa-tags"></i> Прайс</a>
         <a href="https://t.me/kachnart/1545" target="_blank"><i class="fas fa-palette"></i> Рефы</a>
     </div>
-    <img src="IMG_1587.PNG" alt="Character Image Right" class="character-img-right floating-effect">
-    <img src="IMG_1586.PNG" alt="Character Image Left" class="character-img-left floating-effect">
+    <img src="IMG_1587.PNG" alt="Character Image Right" class="character-img-right">
+    <img src="IMG_1586.PNG" alt="Character Image Left" class="character-img-left">
 </body>
 </html>
-
