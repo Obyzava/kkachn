@@ -13,6 +13,7 @@
             text-align: center;
             padding: 50px;
             animation: fadeIn 1.5s ease-in-out;
+            position: relative;
         }
         h1 {
             font-size: 2em;
@@ -46,6 +47,14 @@
             transform: scale(1.05);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
         }
+        .character-img {
+            position: fixed;
+            right: 10px;
+            bottom: 20%;
+            width: 200px;
+            height: auto;
+            opacity: 0.9;
+        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -71,5 +80,6 @@
         <a href="https://t.me/kachnart/363" target="_blank"><i class="fas fa-tags"></i> Прайс</a>
         <a href="https://t.me/kachnart/1545" target="_blank"><i class="fas fa-palette"></i> Рефы</a>
     </div>
+    <img src="IMG_1587.PNG" alt="Character Image" class="character-img">
 </body>
 </html>
