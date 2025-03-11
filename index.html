@@ -54,19 +54,57 @@
             position: fixed;
             bottom: 0;
             right: 0;
-            width: 40%; /* Увеличиваем ширину */
+            width: 40%;
             height: auto;
-            opacity: 0.6; /* Увеличиваем прозрачность */
+            opacity: 0.6;
             z-index: 1;
+            animation: floatRight 6s infinite ease-in-out; /* Анимация */
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3)); /* Тень */
         }
         .character-img-left {
             position: fixed;
             bottom: 0;
             left: 0;
-            width: 40%; /* Увеличиваем ширину */
+            width: 40%;
             height: auto;
-            opacity: 0.6; /* Увеличиваем прозрачность */
+            opacity: 0.6;
             z-index: 1;
+            animation: floatLeft 6s infinite ease-in-out; /* Анимация */
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3)); /* Тень */
+        }
+
+        /* Анимация для правого изображения */
+        @keyframes floatRight {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg); /* Плавное движение вверх и поворот */
+            }
+        }
+
+        /* Анимация для левого изображения */
+        @keyframes floatLeft {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(-5deg); /* Плавное движение вверх и поворот */
+            }
+        }
+
+        /* Эффект плавного появления изображений */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 0.6;
+            }
+        }
+
+        .character-img-right, .character-img-left {
+            animation: fadeIn 2s ease-in-out; /* Плавное появление */
         }
     </style>
 </head>
