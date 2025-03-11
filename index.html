@@ -52,10 +52,20 @@
             transform: scale(1.05);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
         }
-        .character-img {
+        .character-img-right {
             position: fixed;
             top: 50%;
-            left: 80%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: auto;
+            opacity: 0.3;
+            z-index: 1;
+        }
+        .character-img-left {
+            position: fixed;
+            top: 50%;
+            left: 25%;
             transform: translate(-50%, -50%);
             width: 50%;
             height: auto;
@@ -87,6 +97,7 @@
         <a href="https://t.me/kachnart/363" target="_blank"><i class="fas fa-tags"></i> Прайс</a>
         <a href="https://t.me/kachnart/1545" target="_blank"><i class="fas fa-palette"></i> Рефы</a>
     </div>
-    <img src="IMG_1587.PNG" alt="Character Image" class="character-img">
+    <img src="IMG_1587.PNG" alt="Character Image Right" class="character-img-right">
+    <img src="IMG_1586.PNG" alt="Character Image Left" class="character-img-left">
 </body>
 </html>
