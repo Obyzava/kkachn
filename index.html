@@ -49,6 +49,46 @@
             transform: scale(1.05);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
         }
+        .character-img-right, .character-img-left {
+            position: fixed;
+            bottom: 0;
+            width: 40%;
+            height: auto;
+            opacity: 0.6;
+            z-index: 1;
+            animation: float 6s infinite ease-in-out;
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+        }
+        .character-img-right {
+            right: 0;
+        }
+        .character-img-left {
+            left: 0;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .heart {
+            position: absolute;
+            color: #ff66b2;
+            font-size: 20px;
+            animation: fall 5s linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(-10vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(110vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -60,6 +100,19 @@
         <a href="https://t.me/anonaskbot?start=08pGNwUMb6RDPgP" target="_blank"><i class="fab fa-telegram-plane"></i> Анонка</a>
         <a href="https://m.twitch.tv/kkachn" target="_blank"><i class="fab fa-twitch"></i> Twitch</a>
         <a href="https://t.me/kachnart/363" target="_blank"><i class="fas fa-tags"></i> Прайс</a>
+    </div>
+    <img src="IMG_1587.PNG" alt="Character Image Right" class="character-img-right">
+    <img src="IMG_1586.PNG" alt="Character Image Left" class="character-img-left">
+    <div class="hearts">
+        <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+        <div class="heart" style="left: 20%; animation-delay: 1s;">❤️</div>
+        <div class="heart" style="left: 30%; animation-delay: 2s;">❤️</div>
+        <div class="heart" style="left: 40%; animation-delay: 3s;">❤️</div>
+        <div class="heart" style="left: 50%; animation-delay: 4s;">❤️</div>
+        <div class="heart" style="left: 60%; animation-delay: 5s;">❤️</div>
+        <div class="heart" style="left: 70%; animation-delay: 6s;">❤️</div>
+        <div class="heart" style="left: 80%; animation-delay: 7s;">❤️</div>
+        <div class="heart" style="left: 90%; animation-delay: 8s;">❤️</div>
     </div>
 </body>
 </html>
